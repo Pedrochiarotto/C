@@ -1,6 +1,5 @@
 #include "c.h"  
-#include <stdio.h>
-
+#include <stdio.h> 
 //Construção do método ImprimirDados
 void ImprimirDados(aluno *a,char nome,int ra, int idade, float media ){
 
