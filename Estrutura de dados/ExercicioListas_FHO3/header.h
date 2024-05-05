@@ -3,13 +3,13 @@
 #ifndef LISTA_H
 #define LISTA_H
 
-// definição da estrutura
+// definiï¿½ï¿½o da estrutura
 typedef struct _no {
 	int dado;
 	struct _no *proximo;
 } No;
 
-// declaração das operações
+// declaraï¿½ï¿½o das operaï¿½ï¿½es
 void inicializaLista(No **);
 int estaVazia (No *);
 
