@@ -20,7 +20,7 @@ void addIni(float x, float y){
     listaPontos = p;
 }
 //Função para adicionar elementos a lista no final
-void addFim(){
+void addFim(float x, float y){
     ponto *p =(ponto*) malloc(sizeof(ponto));
     p->x=x;
     p->y=y;
@@ -56,6 +56,10 @@ int main()
     addIni(1,5);
     addIni(2,7);
     addIni(5,3);
+    addFim(9,3);
+    addFim(1,1);
+    addFim(16,19);
+
 
     printf("%.0f", listaPontos->prox->x);
 
