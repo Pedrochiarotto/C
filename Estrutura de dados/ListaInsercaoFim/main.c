@@ -61,7 +61,7 @@ int main()
     addFim(16,19);
 
 
-    printf("%.0f", listaPontos->prox->x);
+    
 
     imprime();
     // criação de encadeamento
