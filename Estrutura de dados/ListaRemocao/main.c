@@ -59,12 +59,38 @@ void imprime(){
     }
 }
 
+void removeIndex(int index){
+    if (index > length || length == 0)
+    {
+        printf("A posição desejada não existe.");
+    }else{
+        if (index == 0)
+        {
+            //Remoção no inicio
+            listaPontos = listaPontos->prox; 
+        }else{
+            ponto *listaAux = listaPontos; 
+            int i=0;
+
+            while(i != index - 1){
+                listaAux = listaAux->prox;
+                i++;
+            }
+            listaAux->prox = listaAux->prox->prox; 
+        }
+        length --; 
+    }
+    
+}
+
 int main()
 {
+    removeIndex(0);
+    
     addIndex(1,1,0);
     addIndex(3,4,0);
     addIndex(2,6,2);
-
+    removeIndex(2);
    
 
 
