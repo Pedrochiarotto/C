@@ -1,0 +1,3 @@
+C:/Users/wilso/Documents/Faculdade/Trabalhos e atividades/2024/Estrutura de Dados I/Aula 13/Supermercado/cmake-build-debug/CMakeFiles/Supermercado.dir
+C:/Users/wilso/Documents/Faculdade/Trabalhos e atividades/2024/Estrutura de Dados I/Aula 13/Supermercado/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/wilso/Documents/Faculdade/Trabalhos e atividades/2024/Estrutura de Dados I/Aula 13/Supermercado/cmake-build-debug/CMakeFiles/rebuild_cache.dir
