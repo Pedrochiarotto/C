@@ -37,6 +37,15 @@ void imprime(pessoa *f){
      
 }
 
+void rem(){
+    if (inicio==NULL){
+        printf("Fila vazia!");
+    }else{//primeiro elemento é excluido e ele recebe o proximo elemento
+        inicio = inicio->prox; 
+    }
+    
+}
+
 int main()
 {
     add(5);
@@ -45,5 +54,8 @@ int main()
     add(22);
 
     pessoa *aux = inicio; 
+    imprime(aux);
+    rem();
+    aux = inicio; 
     imprime(aux);
 }
