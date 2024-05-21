@@ -95,9 +95,5 @@ int main()
 
 
     imprime();
-    // criação de encadeamento
-    // p->prox = p1;
-    // p1->prox = p2;
-    // p2->prox = NULL
 }
 
