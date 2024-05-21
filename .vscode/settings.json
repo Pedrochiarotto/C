@@ -2,5 +2,7 @@
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
         "random": "c"
-    }
+    },
+    "cmake.sourceDirectory": "C:/Users/pedri/OneDrive/Documentos/Faculdade/Estudos/C/Estrutura de dados/DesafioEstacionamento",
+    "cmake.configureOnOpen": true
 }

@@ -16,12 +16,10 @@ void add(int senha){
     p->prox = NULL;
 
     if(inicio == NULL){
-
         inicio = p; 
-        
     }else{
 
-        pessoa *aux = (pessoa*)malloc(sizeof(pessoa));
+        pessoa *aux = inicio;
         while (aux->prox!=NULL)
         {
             aux= aux->prox; 
