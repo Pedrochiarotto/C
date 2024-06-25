@@ -24,27 +24,46 @@ nodo* create(int valor){
 void imprimir(nodo *n){
     if(n==NULL)
         return;
-    printf("\n%d", n->valor);
     imprimir(n->esq);
+    printf("\n%d", n->valor);
     imprimir(n->dir);
+}
+//Função para inserir dados na árvore
+
+void add(nodo *n, int valor){
+    if(valor < n->valor){
+        if(n->esq == NULL){
+            n->esq = create(valor); 
+        }else{
+            add(n->esq,valor);
+        }
+    }else {
+        if (n->dir == NULL){
+            n->dir = create(valor);
+        }else{
+            add(n->dir, valor);
+        }     
+    }
+    
 }
 
 int main()
 {
-    nodo *nodo5 = create(5);
-    nodo *nodo2 = create(2);
-    nodo *nodo1 = create(1);
-    nodo *nodo4 = create(4);
-    nodo *nodo8 = create(8);
-
-    //Logica de uma estrutura de arvore
+    //Criação do nodo raíz
+    nodo *root = create(5);
+   
+    add(root,2);
+    add(root,3);
+    add(root,4);
+    add(root,6);
+    /*Logica de uma estrutura de arvore
     nodo5->esq = nodo2;
     nodo2->esq = nodo1;
     nodo5->dir = nodo8;
-    nodo2->dir = nodo4;
+    nodo2->dir = nodo4;*/
 
     //Passar o nodo raiz(inicial) para exibir a arvore toda
-    imprimir(nodo5) ;
+    imprimir(root) ;
 
     return 0; 
     
